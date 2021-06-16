@@ -51,6 +51,8 @@ httpsCert: ""
 httpsKey: ""
 caCert: ""
 accept: ""
+# Change tlsRejectUnauthorized to 0 to troubleshoot SSL issues
+tlsRejectUnauthorized: 1
 
 image:
   repository: snyk/broker

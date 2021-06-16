@@ -149,6 +149,9 @@ spec:
               value: {{ .Values.logLevel }}
             - name: LOG_ENABLE_BODY
               value: {{ .Values.logEnableBody | squote }}
+          #Troubleshooting
+            - name: NODE_TLS_REJECT_UNAUTHORIZED
+              value: {{ .Values.tlsRejectUnauthorized }}
          {{- if .Values.caCert }}
             - name: CA_CERT
               value: {{ .Values.caCert }}
